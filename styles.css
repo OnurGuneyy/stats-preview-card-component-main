@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0;
 }
+span {
+  color: purple;
+}
 h1 {
   color: hsl(0, 0%, 100%);
   font-family: "Outfit", sans-serif;
@@ -94,4 +97,44 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 70%;
+    height: 90%;
+    flex-direction: column;
+  }
+  .card-right {
+    width: 100%;
+    height: 30%;
+    background-color: purple;
+  }
+  .card-left {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(244, 38%, 16%);
+  }
+  .card-left-desc {
+    width: 100%;
+    height: 40%;
+    font-size: 75%;
+  }
+  .for-paragraf {
+    width: 110%;
+  }
+  .paragraf {
+    line-height: 2;
+    font-size: 70%;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .for-navbar {
+    width: 100%;
+    height: 20%;
+  }
+  .navbar {
+    height: 150%;
+    font-size: 80%;
+    flex-direction: column;
+    line-height: 1.7;
+  }
 }
